@@ -57,6 +57,13 @@ int main(int argc, const char **argv)
     // RoutePlanner object below in place of 10, 10, 90, 90.
 
     // Build Model.
+
+    float start_x{};
+    float start_y{};
+    float end_x{};
+    float end_y{};
+
+    std::cin >> start_x >> start_y >> end_x >> end_y;
     RouteModel model{osm_data};
 
     // Create RoutePlanner object and perform A* search.
